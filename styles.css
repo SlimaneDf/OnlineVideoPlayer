@@ -1,0 +1,133 @@
+:root{
+    --black-clr: #000;
+    --pink-clr: pink;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black-clr);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 22px;
+}
+header .header-left-box{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: min(300px, 70%);
+    height: 100%;
+    color: white;
+}
+.header-left-box .img-bx{
+    height: 70%;
+    width: 15%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-clr);
+}
+header a{
+    font-size: 35px;
+    color: pink;
+    margin: 0 0 2px -11px;
+}
+.header-right-box:hover{
+    transform: translate(15%, 0);
+    width: 10%;
+    height: 100%;
+    transition: 0.33s cubic-bezier(0.23, 1, 0.320, 1);
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 3px 80px;
+    display: flex;
+    flex-direction: column;
+}
+main .mainSectionFirstBox{
+    padding: 5px 33px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainSectionFirstBox p{
+    color: var(--pink-clr);
+}
+.mainSectionFirstBox #file-upload-btn{
+    display: none;
+}
+.mainSectionFirstBox label{
+    margin: 0 auto;
+    background-color: var(--pink-clr);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: min(250px, 100%);
+    height: 63px;
+    border: none;
+    outline: none;
+    border-radius: 3.22px;
+    font-size: auto;
+    transition: 0.3s;
+    gap: 10px;
+}
+label i {
+    margin-top: 3px;
+}
+label:hover{
+    background-color: rgb(253, 177, 190);
+    transition: 0.3s;
+}
+.mainSectionFirstBox .video-upload-stat{
+    visibility: hidden;
+}
+/*Global Classes Design*/
+.web-logo{
+    width: 50%;
+    height: 50%;
+}
+.pink-heading{
+    color: var(--pink-clr);
+}
+#nextBtn{
+    width: 250px;
+    height: 63px;
+    cursor: pointer;
+    background-color: var(--pink-clr);
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 23px;
+    font-weight: 600;
+    visibility: hidden;
+}
+#nextBtn:hover{
+    background-color: rgb(253, 177, 190);
+    transition: 0.3s;
+}
+main video{
+    width: min(640px, 100%);
+    height: 480px;
+    display: none;
+    margin: 0 auto;
+}
